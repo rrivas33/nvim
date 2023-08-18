@@ -29,6 +29,8 @@ vim.opt.timeoutlen = 300
 
 vim.opt.colorcolumn = "100"
 
+vim.opt.cursorline = true
+
 -- restore cursor position when opening file
 vim.api.nvim_create_autocmd('BufRead', {
   callback = function(opts)

@@ -46,4 +46,6 @@ return require('packer').startup(function(use)
 
   use { "sainnhe/edge", as = "edge" }
 
+  use('nvim-treesitter/nvim-treesitter-context')
+
 end)
