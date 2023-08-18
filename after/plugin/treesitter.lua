@@ -18,4 +18,18 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+
+  indent = {
+    enable = true
+  },
+
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<CR>", -- set to `false` to disable one of the mappings
+      node_incremental = "<TAB>",
+      scope_incremental = "<CR>",
+      node_decremental = "<S-TAB>",
+    },
+  },
 }
